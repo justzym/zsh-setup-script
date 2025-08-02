@@ -1,35 +1,35 @@
-# Zsh Setup Script
+# Zsh 设置脚本
 
-A Bash script to install and configure Oh My Zsh on Linux systems, including Zsh, Git, `zsh-autosuggestions`, and `zsh-syntax-highlighting` plugins, with a random theme.
+这是一个用于在 Linux 系统上安装和配置 Oh My Zsh 的 Bash 脚本，包括安装 Zsh 和 Git，添加 `zsh-autosuggestions` 和 `zsh-syntax-highlighting` 插件，并将主题设置为随机。
 
-## One-Click Installation
+## 一键安装
 
-Run the following command to download and execute the script:
+运行以下命令即可下载并执行脚本：
 
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/justzym/zsh-setup-script/main/setup-zsh.sh)"
 ```
 
-Or, if you prefer `wget`:
+或者，如果你更喜欢使用 `wget`：
 
 ```bash
 bash -c "$(wget https://raw.githubusercontent.com/justzym/zsh-setup-script/main/setup-zsh.sh -O -)"
 ```
 
-## Features
-- Installs Zsh and Git if not present.
-- Installs Oh My Zsh without user prompts.
-- Configures `zsh-autosuggestions` and `zsh-syntax-highlighting` plugins.
-- Sets the Oh My Zsh theme to `random`.
-- Automatically sets Zsh as the default shell (installs `chsh` if needed).
+## 功能
+- 如果系统中缺少 Zsh 或 Git，则自动安装。
+- 无交互式安装 Oh My Zsh。
+- 配置 `zsh-autosuggestions` 和 `zsh-syntax-highlighting` 插件。
+- 将 Oh My Zsh 主题设置为 `random`。
+- 自动将 Zsh 设置为默认 Shell（如果需要，会安装 `chsh`）。
 
-## Supported Systems
+## 支持的系统
 - Debian/Ubuntu (`apt`)
 - Fedora (`dnf`)
 - Arch Linux (`pacman`)
 - Alpine Linux (`apk`)
 
-## Notes
-- Ensure you have `curl` or `wget` installed.
-- Reopen your terminal after running the script to use Oh My Zsh.
-
+## 注意事项
+- 确保系统中已安装 `curl` 或 `wget`。
+- 运行脚本后，请重新打开终端以使用 Oh My Zsh。
+- 英文版文档请参阅 [README.en.md](README.en.md)。
