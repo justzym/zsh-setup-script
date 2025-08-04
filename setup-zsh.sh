@@ -19,6 +19,24 @@ detect_pkg_manager() {
     fi
 }
 
+
+# 检查 sudo 是否可用
+if ! command -v sudo &> /dev/null; then
+    echo "错误：未安装 sudo，请先安装 sudo 后再运行本脚本。"
+    exit 1
+fi
+
+# 检查是否能通过 IPv4 访问 GitHub
+if ! ping -4 -c 1 github.com &> /dev/null; then
+    echo "错误：无法通过 IPv4 访问 GitHub，GitHub 不支持纯 IPv6。请检查网络设置。"
+    exit 1
+fi
+# 检查 curl 或 wget 是否可用
+if ! command -v curl &> /dev/null && ! command -v wget &> /dev/null; then
+    echo "错误：未安装 curl 或 wget。请安装其中之一以继续。"
+    exit 1
+fi
+
 # 检测包管理器
 PKG_MANAGER=$(detect_pkg_manager)
 
@@ -43,12 +61,6 @@ if [ "$PKG_MANAGER" != "unknown" ]; then
     esac
 else
     echo "错误：不支持的发行版。请手动安装 Zsh 和 Git。"
-    exit 1
-fi
-
-# 检查 curl 或 wget 是否可用
-if ! command -v curl &> /dev/null && ! command -v wget &> /dev/null; then
-    echo "错误：未安装 curl 或 wget。请安装其中之一以继续。"
     exit 1
 fi
 
