@@ -31,5 +31,6 @@ bash -c "$(wget https://raw.githubusercontent.com/justzym/zsh-setup-script/main/
 
 ## Notes
 - Ensure `curl` or `wget` is installed on your system.
+- Ensure `sudo` is installed on your system.
 - Reopen your terminal after running the script to use Oh My Zsh.
 - For the Chinese version, see [README.md](README.md).
