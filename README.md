@@ -31,5 +31,6 @@ bash -c "$(wget https://raw.githubusercontent.com/justzym/zsh-setup-script/main/
 
 ## 注意事项
 - 确保系统中已安装 `curl` 或 `wget`。
+- 确保系统中已安装 `sudo`。
 - 运行脚本后，请重新打开终端以使用 Oh My Zsh。
 - 英文版文档请参阅 [README.en.md](README.en.md)。
