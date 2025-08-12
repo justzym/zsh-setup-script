@@ -16,7 +16,24 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/justzym/zsh-setup-script
 bash -c "$(wget https://raw.githubusercontent.com/justzym/zsh-setup-script/main/setup-zsh.sh -O -)"
 ```
 
+## 中国用户专用脚本
+
+如你在中国大陆，建议使用以下脚本，避免因网络问题导致安装失败：
+
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/justzym/zsh-setup-script/main/setup-zsh-cn.sh)"
+```
+
+或
+
+```bash
+bash -c "$(wget https://raw.githubusercontent.com/justzym/zsh-setup-script/main/setup-zsh-cn.sh -O -)"
+```
+
+该脚本已全部使用 gitee 镜像源，适配中国大陆网络环境。
+
 ## 功能
+
 - 如果系统中缺少 Zsh 或 Git，则自动安装。
 - 无交互式安装 Oh My Zsh。
 - 配置 `zsh-autosuggestions` 和 `zsh-syntax-highlighting` 插件。
@@ -24,12 +41,14 @@ bash -c "$(wget https://raw.githubusercontent.com/justzym/zsh-setup-script/main/
 - 自动将 Zsh 设置为默认 Shell（如果需要，会安装 `chsh`）。
 
 ## 支持的系统
+
 - Debian/Ubuntu (`apt`)
 - Fedora (`dnf`)
 - Arch Linux (`pacman`)
 - Alpine Linux (`apk`)
 
 ## 注意事项
+
 - 确保系统中已安装 `curl` 或 `wget`。
 - 确保系统中已安装 `sudo`。
 - 运行脚本后，请重新打开终端以使用 Oh My Zsh。

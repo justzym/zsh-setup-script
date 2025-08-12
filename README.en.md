@@ -17,6 +17,7 @@ bash -c "$(wget https://raw.githubusercontent.com/justzym/zsh-setup-script/main/
 ```
 
 ## Features
+
 - Installs Zsh and Git if not present.
 - Installs Oh My Zsh without user prompts.
 - Configures `zsh-autosuggestions` and `zsh-syntax-highlighting` plugins.
@@ -24,12 +25,14 @@ bash -c "$(wget https://raw.githubusercontent.com/justzym/zsh-setup-script/main/
 - Automatically sets Zsh as the default shell (installs `chsh` if needed).
 
 ## Supported Systems
+
 - Debian/Ubuntu (`apt`)
 - Fedora (`dnf`)
 - Arch Linux (`pacman`)
 - Alpine Linux (`apk`)
 
 ## Notes
+
 - Ensure `curl` or `wget` is installed on your system.
 - Ensure `sudo` is installed on your system.
 - Reopen your terminal after running the script to use Oh My Zsh.
