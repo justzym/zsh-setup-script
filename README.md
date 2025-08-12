@@ -18,7 +18,7 @@ bash -c "$(wget https://raw.githubusercontent.com/justzym/zsh-setup-script/main/
 
 ## 中国用户专用脚本
 
-如你在中国大陆，建议使用以下脚本，避免因网络问题导致安装失败：
+中国用户，建议使用以下脚本，下面脚本切换了gitee 镜像源：
 
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/justzym/zsh-setup-script/main/setup-zsh-cn.sh)"
@@ -29,8 +29,6 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/justzym/zsh-setup-script
 ```bash
 bash -c "$(wget https://raw.githubusercontent.com/justzym/zsh-setup-script/main/setup-zsh-cn.sh -O -)"
 ```
-
-该脚本已全部使用 gitee 镜像源，适配中国大陆网络环境。
 
 ## 功能
 
