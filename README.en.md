@@ -16,6 +16,17 @@ Or, if you prefer `wget`:
 bash -c "$(wget https://raw.githubusercontent.com/justzym/zsh-setup-script/main/setup-zsh.sh -O -)"
 ```
 
+## Chinese users please use the following script
+
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/justzym/zsh-setup-script/main/setup-zsh-cn.sh)"
+```
+
+Or
+
+```bash
+bash -c "$(wget https://raw.githubusercontent.com/justzym/zsh-setup-script/main/setup-zsh-cn.sh -O -)"
+```
 ## Features
 
 - Installs Zsh and Git if not present.
