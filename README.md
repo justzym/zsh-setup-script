@@ -16,7 +16,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/justzym/zsh-setup-script
 bash -c "$(wget https://raw.githubusercontent.com/justzym/zsh-setup-script/main/setup-zsh.sh -O -)"
 ```
 
-## 中国用户专用脚本
+## 中国用户
 
 中国用户，建议使用以下脚本，下面脚本切换了gitee 镜像源：
 
